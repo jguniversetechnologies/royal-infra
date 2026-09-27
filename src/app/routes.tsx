@@ -6,8 +6,10 @@ import ContactPage from "../pages/ContactPage";
 import HomePage from "../pages/HomePage";
 import NotFoundPage from "../pages/NotFoundPage";
 import ProjectsPage from "../pages/ProjectsPage";
+import PrivacyPage from "../pages/PrivacyPage";
 import QualityPage from "../pages/QualityPage";
 import ServicesPage from "../pages/ServicesPage";
+import TermsPage from "../pages/TermsPage";
 
 export const router = createBrowserRouter([
   {
@@ -21,6 +23,8 @@ export const router = createBrowserRouter([
       { path: "quality-safety", Component: QualityPage },
       { path: "clients", Component: ClientsPage },
       { path: "contact", Component: ContactPage },
+      { path: "privacy-policy", Component: PrivacyPage },
+      { path: "terms", Component: TermsPage },
       { path: "*", Component: NotFoundPage },
     ],
   },

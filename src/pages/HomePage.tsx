@@ -1,5 +1,4 @@
 import AboutProjects from "../components/AboutProjects";
-import Clients from "../components/Clients";
 import Hero from "../components/Hero";
 import Quality from "../components/Quality";
 import Services from "../components/Services";
@@ -13,7 +12,6 @@ export default function HomePage() {
       <AboutProjects />
       <Quality />
       <WhyUs />
-      <Clients />
     </>
   );
 }

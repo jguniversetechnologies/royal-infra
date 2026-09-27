@@ -10,7 +10,7 @@ export default function QualityPage() {
       <PageHero
         eyebrow="Quality & safety"
         title={<>Written down.<br />Practiced on site.</>}
-        description="AIM Infracorp’s quality and safety policies, as the company states them — for industrial and building work."
+        description="Quality and safety policies for industrial and building work."
         image="/images/service-safety.jpg"
       />
 

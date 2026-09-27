@@ -19,7 +19,7 @@ export default function ServicesPage() {
         <div className="mx-auto max-w-[1240px] px-5 lg:px-8">
           <Reveal className="mb-14 grid gap-6 lg:grid-cols-2">
             <h2 className="section-title">Grouped the way the company actually works.</h2>
-            <p className="max-w-lg text-sm leading-7 text-black/55">Each scope below is taken from AIM Infracorp’s own service list. Interior fit-out, electrical work and rainwater harvesting sit alongside them, because those jobs are already in the project record.</p>
+            <p className="max-w-lg text-sm leading-7 text-black/55">Civil and structural packages, villas, industrial sheds, water systems, fire piping, and road development.</p>
           </Reveal>
           <div className="space-y-5">
             {services.map((service, index) => (

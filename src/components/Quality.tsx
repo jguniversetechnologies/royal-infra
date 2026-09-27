@@ -41,9 +41,9 @@ export default function Quality() {
       </div>
 
       <div className="bg-[#C99A3D] text-[#17130B]">
-        <div className="mx-auto grid max-w-[1240px] grid-cols-2 px-5 lg:grid-cols-4 lg:px-8">
+        <div className="mx-auto grid max-w-[1240px] grid-cols-2 px-5 lg:px-8">
           {stats.map((stat, index) => (
-            <div key={stat.label} className={`py-9 lg:px-8 ${index % 2 !== 0 ? "border-l border-black/15 pl-6" : ""} ${index > 1 ? "border-t border-black/15 lg:border-t-0" : ""} ${index > 0 ? "lg:border-l lg:border-black/15" : ""}`}>
+            <div key={stat.label} className={`py-9 lg:px-8 ${index > 0 ? "border-l border-black/15 pl-6 lg:pl-8" : ""}`}>
               <strong className="block font-serif text-4xl lg:text-5xl">{stat.value}</strong>
               <span className="mt-2 block text-[9px] font-bold uppercase tracking-[0.15em] text-black/60">{stat.label}</span>
             </div>

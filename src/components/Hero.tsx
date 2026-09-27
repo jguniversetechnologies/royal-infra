@@ -20,7 +20,7 @@ export default function Hero() {
       <div className="relative mx-auto flex min-h-[610px] max-w-[1240px] items-center px-5 py-20 lg:px-8">
         <motion.div className="max-w-[760px]" initial="hidden" animate="visible" variants={{ hidden: {}, visible: { transition: { staggerChildren: 0.11 } } }}>
           <motion.p className="eyebrow" variants={{ hidden: { opacity: 0, y: 18 }, visible: { opacity: 1, y: 0 } }}>
-            Civil & industrial construction · Since 2004
+            Civil & industrial construction
           </motion.p>
           <motion.h1
             className="mt-5 max-w-[680px] font-serif text-[clamp(3.4rem,7vw,6.4rem)] leading-[0.88] tracking-[-0.045em] text-white"
@@ -41,8 +41,8 @@ export default function Hero() {
             <Link to="/contact" className="button-primary">
               Start a project <ArrowUpRight />
             </Link>
-            <Link to="/projects" className="button-outline">
-              View our work <ArrowRight />
+            <Link to="/services" className="button-outline">
+              Our services <ArrowRight />
             </Link>
           </motion.div>
         </motion.div>

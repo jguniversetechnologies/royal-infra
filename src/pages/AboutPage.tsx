@@ -2,15 +2,15 @@ import { Link } from "react-router";
 import { ArrowUpRight } from "../components/Icons";
 import PageHero from "../components/PageHero";
 import Reveal from "../components/Reveal";
-import { bankers, brand, credentials, equipment, mission, orgLevels, people, story, timeline, workforce } from "../content/site";
+import { equipment, mission, orgLevels, people, story, workforce } from "../content/site";
 
 export default function AboutPage() {
   return (
     <>
       <PageHero
         eyebrow="About Royal Infra"
-        title={<>Twenty years.<br />One practice.</>}
-        description="AIM Infracorp Pvt. Ltd. is the company behind Royal Infra. The directors, the trade and the standard of work carry forward from 2004."
+        title={<>Civil work.<br />One team.</>}
+        description="Structural work, housing, industrial sheds, water systems, fire piping, and infrastructure."
         image="/images/quality-team.jpg"
       />
 
@@ -18,24 +18,13 @@ export default function AboutPage() {
         <div className="mx-auto grid max-w-[1240px] gap-14 px-5 lg:grid-cols-[0.75fr_1.25fr] lg:px-8">
           <Reveal>
             <p className="eyebrow text-[#9B6C13]">Our story</p>
-            <h2 className="section-title mt-4">From a proprietary firm to a private limited company.</h2>
+            <h2 className="section-title mt-4">Set up for civil and industrial work.</h2>
           </Reveal>
           <Reveal delay={0.1} className="space-y-6 text-sm leading-7 text-black/65">
             {story.map((paragraph) => (
               <p key={paragraph.slice(0, 24)}>{paragraph}</p>
             ))}
           </Reveal>
-        </div>
-        <div className="mx-auto mt-16 max-w-[1240px] px-5 lg:px-8">
-          <div className="grid gap-px bg-black/10 sm:grid-cols-3">
-          {timeline.map((item) => (
-            <article key={item.year} className="bg-[#F4EEE5] p-6 lg:p-8">
-              <p className="font-serif text-4xl text-[#9B6C13]">{item.year}</p>
-              <h3 className="mt-4 text-sm font-semibold">{item.title}</h3>
-              <p className="mt-2 text-sm leading-6 text-black/55">{item.text}</p>
-            </article>
-          ))}
-          </div>
         </div>
       </section>
 
@@ -118,25 +107,6 @@ export default function AboutPage() {
               ))}
             </div>
           </div>
-        </div>
-      </section>
-
-      <section className="bg-[#111315] py-20">
-        <div className="mx-auto max-w-[1240px] px-5 lg:px-8">
-          <p className="eyebrow">Registrations</p>
-          <h2 className="mt-4 font-serif text-4xl text-white">On the statutory record.</h2>
-          <dl className="mt-10 grid gap-px bg-white/10 sm:grid-cols-2 lg:grid-cols-3">
-            {credentials.map((item) => (
-              <div key={item.label} className="bg-[#111315] p-6">
-                <dt className="text-[10px] font-bold uppercase tracking-[0.16em] text-[#E7BD63]">{item.label}</dt>
-                <dd className="mt-3 font-serif text-xl text-white">{item.value}</dd>
-              </div>
-            ))}
-          </dl>
-          <p className="mt-8 text-sm text-white/45">Bankers: {bankers.join(" · ")}</p>
-          <p className="mt-2 text-sm text-white/35">
-            {brand.legalName} · Private limited · Year of establishment as a private entity: {brand.incorporated}
-          </p>
         </div>
       </section>
 
